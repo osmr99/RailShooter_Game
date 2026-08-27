@@ -165,6 +165,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mover: {fileID: 510990990}
   pillars: {fileID: 5192695622487937884}
+  count: 1
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -321,7 +322,7 @@ MonoBehaviour:
   minPosX: -1.5
   maxPosX: 1.5
   minPosY: -1.25
-  maxPosY: 1.5
+  maxPosY: 1.25
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -534,7 +535,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54f63303b8f5798448876566d0a64a0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 3
+  moveSpeed: 6
 --- !u!4 &510990990
 Transform:
   m_ObjectHideFlags: 0
