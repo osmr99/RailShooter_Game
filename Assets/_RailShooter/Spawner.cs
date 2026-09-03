@@ -6,21 +6,21 @@ public class Spawner : MonoBehaviour
     public Transform pillars;
     private bool canSpawn = false;
     public int count;
+    public int offSet;
 
     private void FixedUpdate()
     {
-        if(mover.position.z >= 45 * count && !canSpawn)
+        if(mover.position.z >= offSet * count && !canSpawn)
         {
             canSpawn = true;
             spawnMap();
         }
-            
     }
 
     public void spawnMap()
     {
         count++;
-        pillars.position = new Vector3(0, 0, 45 * (count - 1));
+        pillars.position = new Vector3(0, 0, offSet * (count - 1));
         canSpawn = false;
     }
 }
