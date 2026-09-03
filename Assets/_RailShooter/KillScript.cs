@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class KillScript : MonoBehaviour
 {
-    public float killTime = 2f;
+    public float killTime;
     float timeElapsed = 0f;
 
     private void Update()
