@@ -1,4 +1,5 @@
 using System.Collections;
+using UnityEditor;
 using UnityEngine;
 
 public class PlayerShipController : MonoBehaviour
@@ -22,6 +23,10 @@ public class PlayerShipController : MonoBehaviour
     public Transform[] shotSpawns;
     public bool canShoot;
 
+    [Header("Sound Stuff")]
+    public SoundManager sfxManager;
+    public AudioClip blastSfx;
+
     public bool isInverted;
 
     private void Start()
@@ -31,6 +36,9 @@ public class PlayerShipController : MonoBehaviour
 
     void Update()
     {
+        //if(EditorApplication.isPlaying && Input.GetKeyDown(KeyCode.Escape))
+            //EditorApplication.isPlaying = false;
+
         if(Input.GetKeyDown(KeyCode.Escape))
             Application.Quit();
 
@@ -47,6 +55,7 @@ public class PlayerShipController : MonoBehaviour
             {
                 _shot = Instantiate(playerProjectile, t.position, t.rotation) as Rigidbody;
                 _shot.AddForce(t.forward * 500);
+                sfxManager.PlaySound3D(blastSfx, transform.position);
             }
             StartCoroutine(ResetShot());
         }
