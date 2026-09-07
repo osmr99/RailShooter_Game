@@ -27,18 +27,18 @@ public class SoundManager : MonoBehaviour
         sfx2DSource = GetComponentInChildren<AudioSource>();
     }
 
-    public void PlaySound3D(AudioClip clip, Vector3 pos)
+    public void PlaySound3D(AudioClip clip, Vector3 pos, float vol)
     {
         if (clip != null)
         {
-            AudioSource.PlayClipAtPoint(clip, pos);
+            AudioSource.PlayClipAtPoint(clip, pos, vol);
         }
     }
 
-    public void PlaySound3D(string soundName, Vector3 pos)
-    {
-        PlaySound3D(sfxLibrary.GetClipFromName(soundName), pos);
-    }
+    //public void PlaySound3D(string soundName, Vector3 pos)
+    //{
+        //PlaySound3D(sfxLibrary.GetClipFromName(soundName), pos);
+    //}
 
     public void PlaySound2D(string soundName)
     {

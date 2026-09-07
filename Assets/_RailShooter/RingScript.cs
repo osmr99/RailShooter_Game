@@ -29,7 +29,7 @@ public class RingScript : MonoBehaviour
     {
         if(other.gameObject.tag == "Player")
         {
-            sfxManager.PlaySound3D(ringSfx, transform.position);
+            sfxManager.PlaySound3D(ringSfx, transform.position, 0.85f);
             Destroy(gameObject);
         }
     }

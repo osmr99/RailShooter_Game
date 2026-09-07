@@ -71,7 +71,7 @@ MonoBehaviour:
   ringMesh: {fileID: 6523621102277452572}
   rotateSpeed: {x: 0, y: 0, z: 90}
   sfxManager: {fileID: 0}
-  ringSfx: {fileID: 8300000, guid: ba8fbb0e2791d8647be1977e1049b0f8, type: 3}
+  ringSfx: {fileID: 8300000, guid: 5237e4c3ea4901d498ed42fa8587c6a7, type: 3}
 --- !u!54 &3372727944076571340
 Rigidbody:
   m_ObjectHideFlags: 0

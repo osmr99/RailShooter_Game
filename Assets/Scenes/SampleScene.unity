@@ -803,7 +803,7 @@ MonoBehaviour:
   - {fileID: 2104551429}
   canShoot: 0
   sfxManager: {fileID: 815614832}
-  blastSfx: {fileID: 8300000, guid: fcd405e6243c420418fafce42520022a, type: 3}
+  blastSfx: {fileID: 8300000, guid: 6d332af42e3a3ed43b7da3b1f1347f13, type: 3}
   isInverted: 0
 --- !u!136 &1128013007
 CapsuleCollider:

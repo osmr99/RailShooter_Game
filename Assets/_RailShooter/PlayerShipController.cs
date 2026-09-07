@@ -55,7 +55,7 @@ public class PlayerShipController : MonoBehaviour
             {
                 _shot = Instantiate(playerProjectile, t.position, t.rotation) as Rigidbody;
                 _shot.AddForce(t.forward * 500);
-                sfxManager.PlaySound3D(blastSfx, transform.position);
+                sfxManager.PlaySound3D(blastSfx, transform.position, 0.25f);
             }
             StartCoroutine(ResetShot());
         }
